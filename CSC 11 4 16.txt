@@ -1,0 +1,215 @@
+Note: using arrayList as example for stack, refer to problem21
+
+undo: un- does the last thing
+	-stack behavior
+	-heavily used in comp sci
+	- used compilers (etc.)
+
+Stacks need:
+	-constructors
+	-when you make a stack, you get the array list that goes with it
+What do stacks do?
+	-Special behavior(lifo)- Last In First Out [like jobs]
+	- Standard functions
+		-check if array is empty
+		-peek: look ast whatever is on the top
+		-pop: gets rrid of what's on top of the stack
+			*top of the stack has a location
+			*only care cell 0, or top of the stack
+		when you all the variable of a class object in a stack, it can be loterally ANYTHING!!!
+push- need to add in cell zero, put (0, 0) 
+	works with all n
+	l1 is a stack
+
+learn about cues (fifo) First In First Out
+
+11/7/16
+Cant look at things that aren't on the top of the stack (Ie: cant take something thats on the middle of the stack, 
+unless you pop off everything above it
+	-remove takes off whats on top of the stack
+When you set two stacks equal to each other, whatever is in one stack, is equal to the other
+	VERY IMPORTANT!!!!!!
+	making a random integer and putting that in a stack
+	55 is not an object by itself, it is a basic type
+	55 gets converted to an integer object, and then put into a stack
+	when you pop off a stack, it is gone
+		you need to make another stack to put it somewhere
+		as you're poppping off of l1, put the pops somewhere else
+
+
+Cue
+have in queue and de-queue  methods
+
+
+11/9/16
+hash maps
+
+Key>>>hash function
+
+
+in dictionary, think of the word, rather than the definition
+
+WORD IS A KEY ( key means-only assume that there is one of 
+those in the specific data structure) 
+
+In dictionary example- word only appears in dictionary once
+all of the different definitions are weaved together, so it's under one word
+
+Key is put through a hash function 
+
+example:
+student id - 9 digits
+design array with one billion cells
+put a student id cell- go right to student!
+1 to 1 corresondence with student number &
+
+hash functions- modulus arethmetic-if you know the 
+cell, you can find a specific  location
+
+java hashmaps come from java.util.HashMap
+
+put function stores key and the value associated with it
+into the hashmap (you dont tell it where to store it, the hashmap
+does that by itself
+
+
+x.put does 2 things( adds a word, and definition, or 
+takes away words and definitions
+
+
+when you put in the key, you expect to get back its respective value
+
+can't look at hashmap elements individually
+
+11 11 16
+Need to look through all of the values of a hashmap for project
+Maps-can only operate with keys and values, cant look through keys and values
+Set-has methods that allow you to look through the values
+
+KeySet- will give all the keys in a map back in a set
+sets- has a toArray method
+	toArray can be used to view individual information in a set
+	startsWith()- method that searches for a specific variable r set of words
+entrySet- uses a foreach loop- looping for throught the set: going to give each of the key and values
+of the entryset
+more effiecient means  than converting to an array
+Sorting-
+Insertion Sort-arranges a set of things
+Ex: looks at all of the elements, looks at smallest number, puts it in the first spot
+(number order- smallest to largest)
+
+
+17 2 19 11 12 4
+2| 17 19 11 12 4
+2 4|17 19 11 12 
+2 4 11 | 19 12 17
+2 4 11 12 | 19 17
+2 4 11 12 17 |19
+2 4 11 12 17 19
+ 
+2nd pass, ignores previpusly established number looks at the next smallest
+3rd, etc.
+ 	
+11/14/16
+Insertion sort- ( refer to problem 24)
+Make sure the smallest value is in  cell 0
+Look the the entire array, wherever it is, swaps that with 0
+Outer loop, looks for next smallest value, and makes sure it is in cell 2, etc.
+	Nested for loop- necessary for this message
+the int temp portion swaps the smallest with whatever is in the smallest
+
+insertionsort is an n ^2 agorithim (n squared)
+the bigger the array, the time it takes to process increases exponentially
+NOT EFFICIENT
+(points to why effiency is important, long time is essential)
+Brute force sorting is not the best way
+
+nu|0	1	3	4	5	
+   9	7	2	12	3
+
+9 is the smallest, compare against all
+	7 is smaller than 9: point to 7
+	2:smaller than 7, point to 2
+Continues to the end of the line, putting small
+already checked  7 and 9, not taking advantage of that 
+
+nlogn functions- quicksort ( 2nd best sorting method)
+fund- identifies pivot
+	any lumber can be a pivot
+2 sides- left and right
+
+
+
+You put objects into an arraylist
+
+recursion-when a method calls itself
+Wtiting a quicksort method
+pivot doesnt matter
+1.choose a pivot
+2. make 2 arraylists
+3. anything smallerthan pivot= left, anything bigger than pivot= right
+
+
+
+Quicksort
+Recursive set- sort left and right
+Base case- It has to stop at some point, 
+recursion not nessecary 
+
+either nothing left to sort, 
+
+test array liist
+
+dont lose data (worst thing to do)
+
+everything that is on left, smaller than pivot
+everything on right is greater than pivot
+EVEYTHING IS NOT SORTED
+
+
+addAll 
+
+11/28/16
+long time= System.currentTimeMillis
+records the time at which insertion sort started
+
+ArrayList copy makes sure insertion sort list and quicksort lists are the same 
+
+
+Search methods
+Sequential search-look at 2nd element, if not found go to 3rd 
+0_n algorithmn, look at all of the list
+Hashmaps use key and value
+	keys are unique, only one
+
+Binary Search 
+list has too be sorted
+	(use quicksort and insertionsort)
+
+Hash maps replace values associated with keys, if it is entered in again
+Values have to be sorted in order to to search
+
+11/30/16
+Binary list clarified
+have a loop, look at the middle, compare the loopup variable
+
+find average of array
+establish low= lowest point is 0
+establish high= size of the array -1 (dont want to exceed array)
+
+12/5/16 
+GUIS-computer reacts to the things that user inputs
+making gui
+	Create new project
+	create new jframe
+toggling source shows the source coode for the jframe (ie: package name, methods and cons.
+for frame)
+drag and drop the different components(Ie: button, text field, text box
+
+right click- can do a lot f things
+can change the name of the thing,
+you design how it looks, but you have to code the rest
+
+**context of project**
+project 4- need to be able to load the hashmap containing words and definitions
+frames react to the user, only exce
